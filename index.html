@@ -8,24 +8,41 @@
 	<title>Practice_16/Git</title>
 </head>
 <body>
-	<div class="main">
-		<form action="#" method="post">
-			<input type="text" name="Name" id="name" placeholder="Enter your name" required maxlength="25">
-			<input type="password" placeholder="Enter your password" required maxlength="50">
-			<input type="email" placeholder="Enter your email" required maxlenghth="25">
-
-			<input type="file" accept=".jpg, .png, .bmp">
-<br><br>
-			<input type="radio">
-			<input type="checkbox" id="var1"><label for="var1"> Odesa</label>
-<br><br>
-			<button type="submit">Send</button>
-			<button type="reset">Reset</button>
-			<button>Button</button>
-			<textarea name="" id="" cols="30" rows="10" placeholder="text"></textarea>
+	<div class="container">
+		<h2>Contact form</h2>
+		<p>Please fill your information and we will be sending your order</p>
+		<form action="#" metod="post" id="form">
+				<p>Your name</p>
+			<div>
+				<input type="text" required placeholder="first name">
+				<input type="text" required placeholder="last name">
+			</div>
+			<p>Your email</p>
+			<div>
+				<input type="email" required placeholder="your_mail@mail.com">
+			</div>
+			<p>Phone*</p>
+			<div>
+				<input type="text" required placeholder="000">
+				<input type="text" required placeholder="000">
+				<input type="text" required placeholder="0000">
+			</div>
+			<p>Message subject*</p>
+			<div>
+				<select name="select" id="sel">
+					<option value="var1">Other</option>
+					<option value="var2">Theme1</option>
+					<option value="var3">Theme2</option>
+				</select>
+			</div>
+			<p>Message*</p>
+			<div>
+				<textarea name="area" id="txtarea" cols="30" rows="10"></textarea>
+			</div>
+			<hr>
+			<button type="submit" for="form">submit form</button>
 		</form>
-
-		</div>
 	</div>
+	
 </body>
 </html>
